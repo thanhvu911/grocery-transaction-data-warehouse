@@ -8,6 +8,14 @@ An end-to-end data warehouse in SQL Server (Jul–Aug 2025) that turns raw groce
 
 ![Data architecture](docs/DataArchitecture.drawio.png)
 
+> **[Read the walkthrough](WALKTHROUGH.md):** the SQL for every layer, the real results on the full dataset (131M+ transaction lines), and what they mean.
+
+## Key findings
+- **Filtering is essential:** two thirds of raw transactions are Pending or Failed; keeping only Completed sales reduces 10M headers to 3.33M and 131.3M lines to 43.8M.
+- **Header totals are unreliable:** 47.5% of completed transactions have a `total_amount` that does not match their line items, so revenue is built from line prices.
+- **Revenue is concentrated in customers:** the top 20% of customers generate 44.7% of 3.38B in revenue.
+- **Loyalty tiers show no spend difference:** about 3,500 per customer in every tier.
+
 ## Why
 Retail transaction data typically arrives as messy, disconnected extracts. This project shows how to make it trustworthy and fast to query: land it raw, clean and standardize it, then model it for analytics on sales, customers, and product performance.
 
