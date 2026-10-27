@@ -55,14 +55,6 @@ Data warehouse design · Medallion architecture · dimensional modeling · store
 
 ## Gallery
 
-**Data flow**
-
-![Data flow](assets/dataflow.png)
-
-**Data model**
-
-![Data model](assets/data-model.png)
-
 **Architecture: dataflow drawio**
 
 ![Architecture: dataflow drawio](assets/architecture-dataflow-drawio.png)
