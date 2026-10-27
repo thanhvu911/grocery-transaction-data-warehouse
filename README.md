@@ -55,30 +55,30 @@ Data warehouse design · Medallion architecture · dimensional modeling · store
 
 ## Gallery
 
-**Architecture: dataflow drawio**
+**Data flow: source CSVs through Bronze, Silver, and Gold**
 
-![Architecture: dataflow drawio](assets/architecture-dataflow-drawio.png)
+![Data flow: source CSVs through Bronze, Silver, and Gold](assets/architecture-dataflow-drawio.png)
 
-**Architecture: integration model**
+**Integration model: how the source tables relate**
 
-![Architecture: integration model](assets/architecture-integration-model.png)
+![Integration model: how the source tables relate](assets/architecture-integration-model.png)
 
-**Architecture: medallion**
+**Medallion architecture overview**
 
-![Architecture: medallion](assets/architecture-medallion.png)
+![Medallion architecture overview](assets/architecture-medallion.png)
 
-**Architecture: star schema**
+**Gold layer star schema (sales data mart)**
 
-![Architecture: star schema](assets/architecture-star-schema.png)
+![Gold layer star schema (sales data mart)](assets/architecture-star-schema.png)
 
-**Code: bronze load procedure**
+**Bronze load procedure (BULK INSERT with timing and error handling)**
 
-![Code: bronze load procedure](assets/code-bronze-load-procedure.png)
+![Bronze load procedure (BULK INSERT with timing and error handling)](assets/code-bronze-load-procedure.png)
 
-**Code: gold fact sales**
+**Gold fact_sales view**
 
-![Code: gold fact sales](assets/code-gold-fact-sales.png)
+![Gold fact_sales view](assets/code-gold-fact-sales.png)
 
-**Code: silver quality checks**
+**Silver data-quality checks**
 
-![Code: silver quality checks](assets/code-silver-quality-checks.png)
+![Silver data-quality checks](assets/code-silver-quality-checks.png)
